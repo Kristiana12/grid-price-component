@@ -118,10 +118,16 @@ p.card__subscription--para {
   padding: 1.3rem 0;
   border: none;
   border-radius: 0.5rem;
-  color: var(--color-white);
   background-color: hsl(var(--color-secondary));
+  color: var(--color-white);
+  cursor: pointer;
   font-family: inherit;
   box-shadow: var(--box-shadow);
+  transition: all 0.5s ease;
+}
+
+.card__subscription--btn:hover {
+  background-color: hsl(var(--color-secondary) / 0.8);
 }
 
 .card__services {
