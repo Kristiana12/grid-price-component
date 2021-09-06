@@ -70,7 +70,7 @@ h1.card__summary--title {
   letter-spacing: 0.5px;
 }
 
-h3.card__summary--subtitle {
+h2.card__summary--subtitle {
   font-size: var(--font-size-subtitle-mobile);
   color: hsl(var(--color-secondary));
   margin: calc(1.2rem + 1vh) 0 calc(1rem + 1vh);
@@ -91,8 +91,8 @@ p.card__summary--para {
   color: var(--color-white);
 }
 
-h2.card__subscription--title,
-h2.card__services--title {
+h3.card__subscription--title,
+h3.card__services--title {
   font-size: var(--font-size-subtitle-mobile);
   margin-bottom: 1.2rem;
 }
@@ -167,9 +167,9 @@ p.card__subscription--para {
     font-size: var(--font-size-title-desktop);
   }
 
-  h3.card__summary--subtitle,
-  h2.card__subscription--title,
-  h2.card__services--title {
+  h2.card__summary--subtitle,
+  h3.card__subscription--title,
+  h3.card__services--title {
     font-size: var(--font-size-subtitle-desktop);
   }
 
