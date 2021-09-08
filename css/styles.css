@@ -10,7 +10,7 @@
   /* Colors */
   --color-primary: 179 62% 43%;
   --color-secondary: 71 73% 54%;
-  --color-light: hsl(203, 44%, 93%);
+  --color-light: 203 44% 93%;
   --color-dark: 218 22% 67%;
   --color-white: #fff;
 
@@ -31,7 +31,7 @@ html,
 body {
   font-family: "Karla", sans-serif;
   line-height: 1.8;
-  background-color: var(--color-light);
+  background-color: hsl(var(--color-light));
   font-size: 62.5%;
   min-height: 100%;
   width: 100%;
@@ -45,7 +45,7 @@ button {
 a {
   text-decoration: none;
   font-size: var(--font-size-small-text);
-  color: var(--color-light);
+  color: hsl(var(--color-light));
 }
 
 .card {
@@ -98,18 +98,20 @@ h3.card__services--title {
 }
 
 .card__subscription--price {
-  color: var(--color-light);
+  display: inline-flex;
+  align-items: center;
 }
 
-.card__subscription--price span {
+.card__subscription--price--title {
   color: var(--color-white);
   font-size: var(--font-size-price);
-  margin-right: 0.5rem;
+  margin-right: 0.8rem;
   font-weight: 700;
 }
 
-p.card__subscription--para {
+.card__subscription--price--para {
   font-size: var(--font-size-small-text);
+  color: hsl(var(--color-light) / 0.8);
 }
 
 .card__subscription--btn {
